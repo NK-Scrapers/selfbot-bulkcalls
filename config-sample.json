@@ -1,0 +1,13 @@
+{
+  "token": "<TOKEN DISCORD>",
+  "server": "<SERVEUR D'ORIGINE>",
+  "from": {
+    "<SERVER D'ORIGINE CHANNEL1>": "TAG"
+  },
+  "targets": {
+    "TAG": {
+      "<GUILD1>": "<CHANNEL1>",
+      "<GUILD2>": "<CHANNEL2>"
+    }
+  }
+}
