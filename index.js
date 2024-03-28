@@ -8,7 +8,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
     if (message.author.id !== client.user.id) return;
-    if (message.guild.id !== server) return;
+    if (message.guild?.id !== server) return;
     if (from[message.channel.id]) {
         const servers = targets[from[message.channel.id]];
         for (const [serverId, channelId] of Object.entries(servers)) {
