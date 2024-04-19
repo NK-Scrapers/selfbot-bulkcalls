@@ -16,7 +16,7 @@ client.on('message', message => {
             if (!guild) continue;
             const channel = guild.channels.get(channelId);
             if (!channel) continue;
-            channel.send(message.content).catch(() => true);
+            channel.send(message.content, {attachments: message.attachments}).catch(() => true);
         }
     }
 });
